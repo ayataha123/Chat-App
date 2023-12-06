@@ -64,7 +64,7 @@ class chatPage extends StatelessWidget {
                         _scrollController.animateTo(
                           0,
                           curve: Curves.easeOut,
-                          duration: const Duration(milliseconds: 300),
+                          duration: const Duration(milliseconds: 400),
                         );
                           } ,
                           child: Icon(Icons.send)),
