@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "586826021959",
+    "project_id": "chatt-app-f9055",
+    "storage_bucket": "chatt-app-f9055.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586826021959:android:b0fc8efff52b41b0c0c562",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586826021959-ua704ahfhrdn1smfg7tf8t38d0hs3cb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyEkXwCqDal9ZDBfbxF2faTFIzNfyXTMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586826021959-ua704ahfhrdn1smfg7tf8t38d0hs3cb9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "586826021959-kopcsh4tt7qg1p7e8rodg758n2aguedr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
