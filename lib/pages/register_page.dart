@@ -1,4 +1,5 @@
 import 'package:chat_app/pages/chat_page.dart';
+import 'package:chat_app/pages/login_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
@@ -91,7 +92,7 @@ class _RegisterState extends State<Register> {
                         setState(() {});
                         try {
                           await registerUser();
-                          Navigator.pushNamed(context, chatPage.id);
+                          Navigator.pushNamed(context, Login.id);
                         } on FirebaseAuthException catch (e) {
                           if (e.code == 'weak-password') {
                             showBar(context, 'weak passward');

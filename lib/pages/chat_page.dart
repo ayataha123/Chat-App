@@ -56,17 +56,18 @@ class chatPage extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: TextField(
                       controller: controller,
-                      onSubmitted: (data) {
-                        messages.add({kMessage: data, kcurrentDate: DateTime.now(),'id':email});
+                      decoration: InputDecoration(
+                        suffixIcon: GestureDetector(
+                          onTap:(){
+                            messages.add({kMessage: controller.text, kcurrentDate: DateTime.now(),'id':email});
                         controller.clear();
                         _scrollController.animateTo(
                           0,
                           curve: Curves.easeOut,
                           duration: const Duration(milliseconds: 300),
                         );
-                      },
-                      decoration: InputDecoration(
-                        suffixIcon: Icon(Icons.send),
+                          } ,
+                          child: Icon(Icons.send)),
                         hintText: 'Send a Message',
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(16),
@@ -79,7 +80,7 @@ class chatPage extends StatelessWidget {
               ),
             );
           } else {
-            return Text('Loading');
+            return Center(child: CircularProgressIndicator());
           }
         });
   }
